@@ -15,10 +15,10 @@ export const acceptAddNetwork =
     }, 5);
     if (shouldSwitch) {
       await clickOnButton(page, "Switch network");
-      await page.waitForSelector(".new-network-info__wrapper", {
-        visible: true,
-      });
-      await clickOnButton(page, "Got it");
+      // await page.waitForSelector(".new-network-info__wrapper", {
+      //   visible: true,
+      // });
+      // await clickOnButton(page, "Got it");
     } else {
       await clickOnButton(page, "Cancel");
     }
